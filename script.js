@@ -79,25 +79,50 @@
 
 /// array
 
-const food = ['pizza', 'burger', 'soda', 'juice'];
-console.log(food);
-console.log(food[1]);
+// const food = ['pizza', 'burger', 'soda', 'juice'];
+// console.log(food);
+// console.log(food[1]);
 
-console.log(food.length);
-food[2] = 'water';
-console.log(food);
+// console.log(food.length);
+// food[2] = 'water';
+// console.log(food);
 
-food.push('fries');
-console.log(food);
+// food.push('fries');
+// console.log(food);
 
-food.unshift('bread');
-console.log(food);
+// food.unshift('bread');
+// console.log(food);
 
-food.pop();
-console.log(food);
+// food.pop();
+// console.log(food);
 
-food.shift();
-console.log(food);
+// food.shift();
+// console.log(food);
 
-console.log(food.indexOf('burger'));
-console.log(food.includes('water'));
+// console.log(food.indexOf('burger'));
+// console.log(food.includes('water'));
+
+// challenge 2
+
+// const calcTip = bill => bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+
+// console.log(calcTip(100));
+
+// const bills = [125, 55, 44]
+// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])]
+
+// const total = [(bills[0] + tips[0]), (bills[1] + tips[1]), (bills[2] + tips[2])]
+
+// console.log(bills)
+// console.log(tips)
+// console.log(total)
+
+const objCar = {
+    model : 'Trueno AE86',
+    manufacturer : 'Toyota',
+    color : ['White', 'Black'],
+    year : 1977
+}
+
+console.log(objCar.model)
+console.log(objCar['year'])
