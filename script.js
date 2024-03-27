@@ -117,12 +117,45 @@
 // console.log(tips)
 // console.log(total)
 
+// const objCar = {
+//     model : 'Trueno AE86',
+//     manufacturer : 'Toyota',
+//     color : ['White', 'Black'],
+//     year : 1977
+// }
+
+// console.log(objCar.model)
+// console.log(objCar['year'])
+
+// objCar.secondHand = true;
+// objCar['accident'] = false;
+
+// console.log(objCar)
+
+// const foods = {
+//     food_list : ['burger 🍔', 'pizza 🍕', 'noodle 🍜'],
+//     favorite: 'pizza 🍕'
+// }
+
+// console.log(`i have ${foods['food_list'].length} foods in my table, and my favorite is ${foods.favorite}`)
+
 const objCar = {
     model : 'Trueno AE86',
     manufacturer : 'Toyota',
     color : ['White', 'Black'],
-    year : 1977
+    year : 1977,
+    secondHand : true,
+    accident : false,
+
+
+    calcYear: function() {
+        this.age = 2024 - this.year;
+        return this.age
+    },
+
+    summary: function () {
+        return `The car ${this.model} is ${this.calcYear()} years old and ${this.isAccident ? 'never been in a' : 'has been in an'} accident`
+    }
 }
 
-console.log(objCar.model)
-console.log(objCar['year'])
+console.log(objCar.summary())
